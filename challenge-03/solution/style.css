@@ -1,0 +1,73 @@
+:root {
+  /* #136C72 */
+  --alt-background-col: rgba(19, 108, 114, 1);
+
+  /* #23424A */
+  --main-background-col: rgba(35, 66, 74, 1);
+
+  /* #38CFD9 */
+  --button-background-col: rgba(56, 207, 217, 1);
+
+  --main-font-col: white;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+  /* 21px = 1.3125rem (21/16) */
+  font-size: 1.3125rem;
+
+  color: var(--main-font-col);
+}
+
+.hero {
+  background-color: var(--main-background-col);
+  padding: 100px 0;
+}
+
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero__text {
+  width: 65%;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+.hero h1 {
+  margin-bottom: 0.5em;
+}
+
+.hero p {
+  margin-bottom: 2em;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--button-background-col);
+  color: var(--main-background-col);
+  font-weight: 900;
+  padding: 0.75rem 2rem;
+  border-radius: 400px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn:hover,
+.btn:focus {
+  opacity: 0.5;
+}
