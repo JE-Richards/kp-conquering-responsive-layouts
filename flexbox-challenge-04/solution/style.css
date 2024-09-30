@@ -1,0 +1,102 @@
+:root {
+  --cream: #f3eed9;
+  --brown: #824936;
+  --slate: #222c2a;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  font-size: 1.3125rem;
+}
+
+h1,
+h2 {
+  font-family: 'Playfair Display', serif;
+  line-height: 1.2;
+  font-weight: 900;
+}
+
+img {
+  max-width: 100%;
+  border: 0;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1128px;
+  width: 80%;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  background-color: var(--cream);
+  min-height: 660px;
+  color: var(--brown);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero__kicker {
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.5em;
+}
+
+.hero__title {
+  font-size: 3.75rem;
+}
+
+section {
+  margin: 0 auto;
+  padding: 4em 0;
+}
+
+.content__header {
+  margin-bottom: 1em;
+  font-size: 2.25rem;
+}
+
+.white__header {
+  color: var(--brown);
+}
+
+.white__para {
+  color: var(--slate);
+  width: 100%;
+}
+
+.slate {
+  background-color: var(--slate);
+  color: var(--cream);
+}
+
+.brown {
+  background-color: var(--brown);
+  color: var(--cream);
+}
+
+@media (min-width: 900px) {
+  .row {
+    display: flex;
+    justify-content: center;
+    gap: 4em;
+  }
+}
